@@ -32,6 +32,8 @@ ______________________________________________________________________
 
 ---
 
+## OOD Generalization and Compositional Behavior Generalization
+Building on top of original **LIBERO** benchmark, we add OOD scenarios for **LIBERO-10** and novel behavior composition tasks that combines short-horizon tasks appeared in **LIBERO-100**. These added variations are still in **LIBERO-10** task suite. The OOD scenarios includes 20 visual OOD scenarios and 13 novel behavior composition tasks. Therefore, there are 43 tasks in **LIBERO-10** now. In visual OOD, 10 are adding or replacing distracting objects; 10 are changing the background and viewpoints. 
 
 # Contents
 
@@ -71,20 +73,6 @@ By default, the dataset will be stored under the ```LIBERO``` folder and all fou
 python benchmark_scripts/download_libero_datasets.py --datasets DATASET
 ```
 where ```DATASET``` is chosen from `[libero_spatial, libero_object, libero_100, libero_goal`.
-
-**NEW!!!**
-
-Alternatively, you can download the dataset from HuggingFace by using:
-```python
-python benchmark_scripts/download_libero_datasets.py --use-huggingface
-```
-
-This option can also be combined with the specific dataset selection:
-```python
-python benchmark_scripts/download_libero_datasets.py --datasets DATASET --use-huggingface
-```
-
-The datasets hosted on HuggingFace are available at [here](https://huggingface.co/datasets/yifengzhu-hf/LIBERO-datasets).
 
 
 # Getting Started

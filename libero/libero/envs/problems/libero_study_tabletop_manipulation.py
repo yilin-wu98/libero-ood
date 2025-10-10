@@ -17,7 +17,7 @@ class Libero_Study_Tabletop_Manipulation(BDDLBaseDomain):
             self.study_table_full_size = table_full_size
         else:
             self.study_table_full_size = (1.0, 1.2, 0.05)
-        self.study_table_offset = (-0.2, 0, 0.867)
+        self.study_table_offset = (-0.2, 0, 0.9)#0.867)
         # For z offset of environment fixtures
         self.z_offset = 0.01 - self.study_table_full_size[2]
         kwargs.update(
